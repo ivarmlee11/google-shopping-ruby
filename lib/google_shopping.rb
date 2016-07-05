@@ -19,27 +19,37 @@ google_data = JSON.parse(file)
 # Put your answers below here
 
 # 1
+  # results = google_data['items'].select do |element|
+  #   element['kind'] == 'shopping#product'
+  # end
 
-# results = google_data['items'].select do |element|
-#   element['kind'] == 'shopping#product'
-# end
+  # # puts results.inspect
 
-# puts results.inspect
+  # results.each do |element|
+  #   puts element['product']['title']
+  # end
 
-# puts results.length
+  # puts results.length
 
 # 2
 # results = google_data['items'].select do |element|
 #   element['product']['inventories'][0]['availability'] == 'backorder'
 # end
 
-# puts results.inspect
+# results.each do |element|
+#   puts element['product']['title']
+# end
+
 
 # puts results.length
 
 # 3
 # results =  google_data['items'].select do |element|
 #   element['product']['images'].length > 1
+# end
+
+# results.each do |element|
+#   puts element['product']['title']
 # end
 
 # puts results.length
@@ -49,6 +59,10 @@ google_data = JSON.parse(file)
 #   element['product']['brand'] == 'Canon'
 # end
 
+# results.each do |element|
+#   puts element['product']['title']
+# end
+
 # puts results.length
 
 # 5
@@ -56,7 +70,9 @@ google_data = JSON.parse(file)
 #   element['product']['author']['name'] == 'eBay'
 # end
 
-# puts results.inspect
+# results.each do |element|
+#   puts element['product']['title']
+# end
 
 # puts results.length
 
